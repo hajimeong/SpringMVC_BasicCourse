@@ -11,6 +11,6 @@ public class OldController implements Controller {
     @Override
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
         System.out.println("OldController.handleRequest");
-        return null;
+        return new ModelAndView("new-form"); //논리 이름만 -> 뷰를 못찾음 -> 뷰 리졸버를 만들어줘야 함
     }
 }
